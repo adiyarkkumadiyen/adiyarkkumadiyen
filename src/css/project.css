@@ -1,0 +1,35 @@
+.repeating-text-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: hsl(0, 59%, 41%); /* Adjust background color */
+}
+
+.repeating-text {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  white-space: nowrap;
+  animation: scrollText 10s linear infinite;
+}
+
+.repeating-text span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.repeating-text img {
+  width: 30px;
+  height: auto;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
