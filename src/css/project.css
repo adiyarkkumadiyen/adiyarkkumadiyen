@@ -1,7 +1,8 @@
 .repeating-text-container {
   width: 100%;
   overflow: hidden;
-  background-color: hsl(0, 59%, 41%); /* Adjust background color */
+  background-color: hsl(0, 59%, 41%);
+  white-space: nowrap;
 }
 
 .repeating-text {
@@ -9,6 +10,7 @@
   gap: 15px;
   align-items: center;
   white-space: nowrap;
+  min-width: 200%;
   animation: scrollText 10s linear infinite;
 }
 
@@ -27,9 +29,9 @@
 
 @keyframes scrollText {
   from {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }

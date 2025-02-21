@@ -13,7 +13,7 @@ import ulavarapani1 from "../../assets/ulavarapani1.jpg";
 import thiruneer from "../../assets/thiruneer.jpg";
 import thiruneer1 from "../../assets/thiruneer1.jpg";
 import puthondu from "../../assets/puthondu.png";
-import thupam from "../../assets/thupam.png";
+import thupam from "../../assets/thupam.jpeg";
 import ThonduseyumAdiyargal from "../../assets/ThonduseyumAdiyargal.png";
 import ThonduseyumAdiyargal1 from "../../assets/ThondueyumAdiyargal1.jpg";
 import Handicapped from "../../assets/Handicapped.png";

@@ -125,15 +125,15 @@ const Header = () => {
 
       {/* Scrolling Text Section */}
       <div className="repeating-text-container">
-        <div className="repeating-text">
-          {[...Array(10)].map((_, index) => (
-            <React.Fragment key={index}>
-              <span>சிவ சிவ</span>
-              <img src={nandiIcon} alt="Nandi" />
-            </React.Fragment>
-          ))}
-        </div>
+      <div className="repeating-text">
+        {[...Array(20)].map((_, index) => (
+          <React.Fragment key={index}>
+            <span>சிவ சிவ</span>
+            <img src={nandiIcon} alt="Nandi" />
+          </React.Fragment>
+        ))}
       </div>
+    </div>
     </>
   );
 };
