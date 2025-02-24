@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import footer from "../assets/footer.jpg";
+import QR from "../assets/QR.png";
+
 const Footer = () => {
   return (
     <footer
@@ -12,56 +14,61 @@ const Footer = () => {
       }}
     >
       <Container fluid className="py-4">
-        <Row className="d-flex justify-content-space-between">
+        <Row className="d-flex justify-content-between">
           {/* Column 1: About Us */}
-          <Col>
+          <Col md={4}>
             <h5>About Us</h5>
             <p>
               Adiyarkkum Adiyen is dedicated to serving humanity through various
               causes. Join us in making a difference!
             </p>
+
+            {/* Donation Details (Without Colors) */}
+            <div className="p-2">
+              <p>நன்கொடை வழங்கும் பக்தர்களுக்கு வேண்டுகோள்.</p>
+              <p>
+                <strong>Name:</strong> ADIYARKKUM ADIYEN <br />
+                <strong>BANK:</strong> UNION BANK OF INDIA <br />
+                <strong>BRANCH:</strong> SOMANUR <br />
+                <strong>ACCOUNT:</strong> CA A/C NO. 334901010300478 <br />
+                <strong>IFSC CODE:</strong> UBIN0533491
+              </p>
+              <p>
+                மேலே காணும் <strong>வங்கிக்கு</strong> அனுப்பவும்.
+              </p>
+            </div>
           </Col>
-          {/* Column 2: Links */}
-          {/* <Col md={4} className="mb-3">
-            <h5>Quick Links</h5>
-            <ul className="list-unstyled">
-              <li>
-                <a href="/about-us" className="text-white text-decoration-none">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="/donate" className="text-white text-decoration-none">
-                  Donate
-                </a>
-              </li>
-              <li>
-                <a href="/causes" className="text-white text-decoration-none">
-                  Causes
-                </a>
-              </li>
-              <li>
-                <a href="/contact" className="text-white text-decoration-none">
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-          </Col> */}
+
+          {/* Column 2: QR Code */}
+          <Col
+            md={4}
+            className="d-flex justify-content-center align-items-center"
+          >
+            <img
+              src={QR}
+              alt="QR Code"
+              className="img-fluid rounded shadow"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
+          </Col>
+
           {/* Column 3: Contact Info */}
-          <Col>
+          <Col md={4}>
             <h5>Contact Us</h5>
             <p>
               11/11A, Sirumugai Road, North Street, Annur, Annur Taluk,
               Coimbatore District, Tamilnadu, India- 641653. <br />
               Email:{" "}
-              <a href="mailto:info@adiyarkkumadiyen.org" className="text-white">
-                adiyarkkumadiyen.trust@gmail.com
+              <a href="mailto:info@adiyarkkumadiyen.org" className="text-lght">
+                adiyarkkumadiyen.org@gmail.com
               </a>
               <br />
-              Cell : +91-90033 93884, +91-98422 91795{" "}
+              Cell: +91-90033 93884
             </p>
           </Col>
         </Row>
+
+        {/* Footer Section */}
         <Row className="border-top pt-3">
           <Col className="text-center">
             <p className="mb-0">

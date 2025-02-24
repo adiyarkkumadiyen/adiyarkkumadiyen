@@ -1,11 +1,12 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import {
   Container,
   Nav,
   Navbar,
-  Button,
   Offcanvas,
   Col,
+  Button,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../assets/Logo.png";
@@ -16,6 +17,18 @@ import nandiIcon from "../assets/nandhi.png"; // Ensure the path is correct
 import "../css/project.css"; // Ensure CSS is imported
 
 const Header = () => {
+  const colors = ["#ff5733", "#33ff57", "#3357ff", "#ff33a8", "#f4d03f"];
+  const textColors = ["#ffffff", "#000000", "#ffffff", "#ffffff", "#000000"];
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % colors.length);
+    }, 1000); // Change color every second
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
   return (
     <>
       {/* Top Header for contact details */}
@@ -36,9 +49,7 @@ const Header = () => {
                 className="me-2"
                 style={{ color: "white" }}
               />
-              <span style={{ color: "white" }}>
-                +91-90033 93884, +91-98422 91795
-              </span>
+              <span style={{ color: "white" }}>+91-90033 93884</span>
             </div>
 
             {/* Email Address */}
@@ -49,7 +60,7 @@ const Header = () => {
                 style={{ color: "white" }}
               />
               <span style={{ color: "white" }}>
-                adiyarkkumadiyen.trust@gmail.com
+                adiyarkkumadiyen.org@gmail.com
               </span>
             </div>
           </div>
@@ -105,19 +116,18 @@ const Header = () => {
           </Navbar.Offcanvas>
           <Button
             style={{
-              backgroundColor: "#fdebd0",
-              color: "black",
+              backgroundColor: colors[index],
+              color: textColors[index],
               border: "none",
+              transition: "background-color 0.5s ease-in-out",
+              fontWeight: "bold",
             }}
+            onClick={() =>
+              (window.location.href =
+                "https://pages.razorpay.com/pl_PNxbjrfJmkL9hX/view#view-1")
+            }
           >
-            <span
-              onClick={() =>
-                (window.location.href =
-                  "https://pages.razorpay.com/pl_PNxbjrfJmkL9hX/view#view-1")
-              }
-            >
-              Donate Now
-            </span>
+            Donate Now
           </Button>
           {/* </Col> */}
         </Container>
@@ -125,15 +135,15 @@ const Header = () => {
 
       {/* Scrolling Text Section */}
       <div className="repeating-text-container">
-      <div className="repeating-text">
-        {[...Array(20)].map((_, index) => (
-          <React.Fragment key={index}>
-            <span>சிவ சிவ</span>
-            <img src={nandiIcon} alt="Nandi" />
-          </React.Fragment>
-        ))}
+        <div className="repeating-text">
+          {[...Array(20)].map((_, index) => (
+            <React.Fragment key={index}>
+              <span>சிவ சிவ</span>
+              <img src={nandiIcon} alt="Nandi" />
+            </React.Fragment>
+          ))}
+        </div>
       </div>
-    </div>
     </>
   );
 };
