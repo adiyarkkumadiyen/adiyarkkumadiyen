@@ -48,7 +48,7 @@ const Footer = () => {
               src={QR}
               alt="QR Code"
               className="img-fluid rounded shadow"
-              style={{ maxWidth: "100%", height: "auto" }}
+              style={{ maxWidth: "50%", height: "auto" }}
             />
           </Col>
 
