@@ -10,7 +10,7 @@ import pasu from "../../assets/pasu.jpg";
 import pasu1 from "../../assets/pasu1.jpg";
 import ulavarapani from "../../assets/ulavarapani.png";
 import ulavarapani1 from "../../assets/ulavarapani1.jpg";
-import thiruneer from "../../assets/thiruneer.jpg";
+import thiruneer from "../../assets/thiruneer.jpeg";
 import thiruneer1 from "../../assets/thiruneer1.jpg";
 import puthondu from "../../assets/puthondu.png";
 import thupam from "../../assets/thupam.jpeg";
