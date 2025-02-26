@@ -79,7 +79,7 @@ const Footer = () => {
 
               <div className="d-flex gap-2">
                 <a
-                  href="https://www.facebook.com/people/Adiyarku-Adiyen/100053974383705/?_rdr"
+                  href="https://www.facebook.com/share/1BWxVKCb1T/?mibextid=qi2Omg"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="icon-container facebook"
@@ -87,7 +87,7 @@ const Footer = () => {
                   <FaFacebookF className="icon" />
                 </a>
                 <a
-                  href="https://www.instagram.com/adiyarku_adiyen/"
+                  href="https://www.instagram.com/adiyarkkumadiyen?igsh=MWc3ZHM4bWF1NDlkYQ=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="icon-container instagram"
