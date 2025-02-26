@@ -16,11 +16,11 @@ const Aboutus = () => {
           </div>
           <div className="d-flex justify-content-center">
             <span className="fw-bold me-2">Email:</span>
-            <span>adiyarkkumadiyen.trust@gmail.com</span>
+            <span>adiyarkkumadiyen.org@gmail.com</span>
           </div>
           <div className="d-flex justify-content-center">
             <span className="fw-bold me-2">Phone No:</span>
-            <span>+91-90033 93884, +91-98422 91795</span>
+            <span>+91-90033 93884</span>
           </div>
           <div className="d-flex justify-content-center">
             <span className="fw-bold me-2">Address:</span>
