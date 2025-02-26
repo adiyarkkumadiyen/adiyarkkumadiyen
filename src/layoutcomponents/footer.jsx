@@ -2,6 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import footer from "../assets/footer.jpg";
 import QR from "../assets/QR.png";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaTwitter,
+  FaLinkedin,
+} from "react-icons/fa";
+import "../css/project.css"; // Ensure  CSS is imported
 
 const Footer = () => {
   return (
@@ -65,9 +73,39 @@ const Footer = () => {
               <br />
               Cell: +91-90033 93884
             </p>
+            {/* Social Media Icons */}
+            <div className="d-flex align-items-center gap-3 ">
+              <h6 className="fw-bold text-white mb-0">Social Media:</h6>
+
+              <div className="d-flex gap-2">
+                <a
+                  href="https://www.facebook.com/people/Adiyarku-Adiyen/100053974383705/?_rdr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="icon-container facebook"
+                >
+                  <FaFacebookF className="icon" />
+                </a>
+                <a
+                  href="https://www.instagram.com/adiyarku_adiyen/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="icon-container instagram"
+                >
+                  <FaInstagram className="icon" />
+                </a>
+                <a
+                  href="https://www.youtube.com/@AdiyarkkumAdiyenTrust?sub_confirmation=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="icon-container youtube"
+                >
+                  <FaYoutube className="icon" />
+                </a>
+              </div>
+            </div>
           </Col>
         </Row>
-
         {/* Footer Section */}
         <Row className="border-top pt-3">
           <Col className="text-center">

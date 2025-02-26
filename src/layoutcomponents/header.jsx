@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import backgroundImage from "../assets/Banner-bg.jpg"; // Adjust path
 import nandiIcon from "../assets/nandhi.png"; // Ensure the path is correct
-import "../css/project.css"; // Ensure CSS is imported
+import "../css/project.css"; // Ensure  CSS is imported
 
 const Header = () => {
   const colors = ["#ff5733", "#33ff57", "#3357ff", "#ff33a8", "#f4d03f"];
