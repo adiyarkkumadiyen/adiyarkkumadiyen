@@ -4,7 +4,7 @@ import Footer from "../src/layoutcomponents/footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactUs from "./components/contactus/contactus";
 import Indexpage from "../src/components/indexpage/indexpage";
-// import chantingAudio from "./assets/chanting.mp3";
+//
 const App = () => {
   return (
     <Router>
@@ -21,9 +21,6 @@ const App = () => {
           </Routes>
         </div>
         <Footer />
-        {/* <audio autoPlay loop>
-          <source src={chantingAudio} type="audio/mpeg" />
-        </audio> */}
       </div>
     </Router>
   );
