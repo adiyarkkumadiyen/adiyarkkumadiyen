@@ -4,7 +4,7 @@ import Footer from "../src/layoutcomponents/footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactUs from "./components/contactus/contactus";
 import Indexpage from "../src/components/indexpage/indexpage";
-
+//
 const App = () => {
   return (
     <Router>
