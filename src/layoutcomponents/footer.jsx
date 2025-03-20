@@ -10,9 +10,23 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import "../css/project.css"; // Ensure  CSS is imported
+import { useEffect, useRef } from "react";
 import chantingAudio from "../assets/chanting.mp3";
-
 const Footer = () => {
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    const playAudio = () => {
+      if (audioRef.current) {
+        audioRef.current.play().catch((error) => {
+          console.log("Autoplay failed:", error);
+        });
+      }
+    };
+
+    document.addEventListener("click", playAudio, { once: true }); // Play on first click
+    return () => document.removeEventListener("click", playAudio);
+  }, []);
   return (
     <footer
       className="bg-dark text-white"
@@ -116,7 +130,12 @@ const Footer = () => {
             </p>
           </Col>
         </Row>
-        <audio autoPlay loop src={chantingAudio}></audio>
+        <div>
+          <audio ref={audioRef} loop>
+            <source src={chantingAudio} type="audio/mpeg" />
+          </audio>
+          <p>Click anywhere to start audio</p>
+        </div>{" "}
       </Container>
     </footer>
   );
