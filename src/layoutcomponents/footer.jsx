@@ -10,6 +10,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import "../css/project.css"; // Ensure  CSS is imported
+import chantingAudio from "../assets/chanting.mp3";
 
 const Footer = () => {
   return (
@@ -115,6 +116,7 @@ const Footer = () => {
             </p>
           </Col>
         </Row>
+        <audio autoPlay loop src={chantingAudio}></audio>
       </Container>
     </footer>
   );
